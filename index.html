@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Guides - Home</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --content-bg: #2d2d2d;
+            --text-color: #e0e0e0;
+            --primary-color: #007bff;
+            --secondary-color: #0056b3;
+            --border-color: #444;
+            --card-bg: #333;
+            --card-hover: #3c3c3c;
+            --code-bg: #1e1e1e;
+            --code-color: #d4d4d4;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 0.5em;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            background-color: var(--card-hover);
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.4em;
+        }
+
+        .card p {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Python Guides</h1>
+            <p class="subtitle">Coleção de guias úteis para desenvolvimento Python</p>
+        </header>
+
+        <main>
+            <div class="grid">
+                <a href="Como Empacotar Python-Para-EXE.html" class="card">
+                    <h3>Empacotar Python em .exe</h3>
+                    <p>Guia completo para criar executáveis que não abrem a janela do console e com ícone personalizado usando PyInstaller.</p>
+                    <button class="btn">Acessar Guia</button>
+                </a>
+
+                <a href="Como Instalar Bibliotecas de Terceiros via Pip Apenas em um Projeto.html" class="card">
+                    <h3>Instalar Bibliotecas com Ambientes Virtuais</h3>
+                    <p>Guia completo para usar ambientes virtuais e isolar dependências por projeto, evitando conflitos.</p>
+                    <button class="btn">Acessar Guia</button>
+                </a>
+
+                <!-- Exemplo de como adicionar futuramente:
+                <a href="novo-guia.html" class="card">
+                    <h3>Novo Guia</h3>
+                    <p>Descrição do novo guia.</p>
+                    <button class="btn">Acessar Guia</button>
+                </a>
+                -->
+            </div>
+        </main>
+
+        <footer>
+            <p>Python Guides Collection &copy; 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
